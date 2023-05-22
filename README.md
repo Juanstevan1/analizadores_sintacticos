@@ -5,7 +5,6 @@
 Este repositorio contiene implementaciones de dos tipos de analizadores sintácticos ampliamente utilizados en el campo de la compilación y el procesamiento de lenguajes de programación: Bottom-Up y Top-Down.
 
 ----
-----
 #Analizador Bottom-Up
 -
 El analizador Bottom-Up, también conocido como analizador ascendente, construye un árbol de análisis comenzando desde los símbolos terminales y aplicando reglas gramaticales para llegar a la raíz del árbol. Este tipo de analizador sigue una estrategia de reducción o desplazamiento para construir el árbol de análisis.
