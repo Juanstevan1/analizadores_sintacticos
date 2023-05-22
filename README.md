@@ -1,7 +1,5 @@
 # analizadores_sintacticos
 
----
-
 Este repositorio contiene implementaciones de dos tipos de analizadores sintácticos ampliamente utilizados en el campo de la compilación y el procesamiento de lenguajes de programación: Bottom-Up y Top-Down.
 
 ----
