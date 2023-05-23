@@ -4,15 +4,54 @@ Este repositorio contiene implementaciones de dos tipos de analizadores sintáct
 
 ----
 Analizador Top-Down
--
-Al realizar el proyecto se tomaron las siguientes condicones: 
-  1. Verificar si la gramatica es LL(1). Si la gramatica no es LL(1), retornar el mensaje “error” y detener
+--
+Se tomaron las siguientes condicones para hacer el analizador Top-Down: 
+  - Verificar si la gramatica es LL(1). Si la gramatica no es LL(1), retornar el mensaje “error” y detener
      la ejecucion, no es necesario procesar las cadenas.
-  2. Calcular los conjuntos First y Follow. Tambi´en se debe implementar la funci´on para calcular el conjunto
+  - Calcular los conjuntos First y Follow. Tambi´en se debe implementar la funci´on para calcular el conjunto
      Fisrt de una cadena.
-  3. Calcular la tabla de an´alisis sintactico.
-  4. Implementar algoritmo de an´alisis de cadenas.
+  - Calcular la tabla de an´alisis sintactico.
+  - Implementar algoritmo de an´alisis de cadenas.
+---
+Analizador Buttom-Up
+--
+Se tomaron las siguientes condicones para hacer el analizador Top-Down: 
+  - Implementar funcion para calcular Closure(I) donde I es un conjunto de ıtems.
+  - Calcular LR(0) canocico, utilizando la funcion GoTo(I, X) donde I es un conjunto de ıtems y X es
+     un sımbolo de la gram´atica.
+  - Calcular la tabla de an´alisis sintactico utilizando las funciones Action(I, a) y GoTo(I, X) donde
+     a ∈ Σ, I es un conjunto de ıtems y X es un sımbolo de la gram´atica.
+  - Implementar algoritmo de analisis de cadenas.
  
- 
-En el proceso de análisis top-down, se parte de la raíz del árbol y se desciende hacia los símbolos terminales siguiendo las reglas gramaticales. Cada no terminal en el camino se expande utilizando reglas de producción hasta que se alcancen los símbolos terminales correspondientes. El analizador top-down puede utilizar diferentes algoritmos, como el algoritmo LL(1).
+---
+Input
+--
+Se ingresa desde consola, tanto la gramatica como para verificar las cadenas.
+ -Gramatica:
+      Cada produccion de un no terminal se ingresa en una sola linea, por ejemplo (S-> aS|ε) y termina con $. 
+ -Cadenas:
+      Se ingresa en lineas independientes y termina cuando lee una linea vacia.
+      
+---
+Output
+--
+Cuando no es LL(1) o LR(1), sale por pantalla indicando que no lo es y no se analisan las cadenas. En cambio, si es
+cumple las condiciones, leera la cadenas y nos dira si cumple o no. 
 
+---
+Requisitos
+--
+El proyecto se realizo en python 3.11, por lo tanto se necesita:
+  -Importor las libreria (numpy y deque)
+  -Ejecutar el programa (Main.py) teniendo encuenta que los 3 archivos esten en el mismo directorio.
+  
+---
+Contacto
+--
+David Grisales Posada
+dgrisalesp@eafit.edu.co
+
+Juan Esteban Garcia Galvis
+jegarciag1@eafit.edu.co
+
+---
