@@ -5,17 +5,17 @@ Este repositorio contiene implementaciones de dos tipos de analizadores sintáct
 ----
 Analizador Top-Down
 --
-Se tomaron las siguientes condicones para hacer el analizador Top-Down: 
-  - Verificar si la gramatica es LL(1). Si la gramatica no es LL(1), retornar el mensaje “error” y detener
-     la ejecucion, no es necesario procesar las cadenas.
-  - Calcular los conjuntos First y Follow. Tambi´en se debe implementar la funci´on para calcular el conjunto
+Se tomaron las siguientes condicones para hacer el analizador Top-Down:
+  - Calcular los conjuntos First y Follow. También se debe implementar la función para calcular el conjunto
      Fisrt de una cadena.
-  - Calcular la tabla de an´alisis sintactico.
-  - Implementar algoritmo de an´alisis de cadenas.
+  - Verificar si la gramatica es LL(1). Si la gramatica no es LL(1), retornar el mensaje “error” y detener
+     la ejecución, no es necesario procesar las cadenas.
+  - Calcular la tabla de análisis sintactico.
+  - Implementar algoritmo de análisis de cadenas.
 ---
 Analizador Buttom-Up
 --
-Se tomaron las siguientes condicones para hacer el analizador Top-Down: 
+Se tomaron las siguientes condicones para hacer el analizador Buttom-up: 
   - Implementar funcion para calcular Closure(I) donde I es un conjunto de ıtems.
   - Calcular LR(0) canocico, utilizando la funcion GoTo(I, X) donde I es un conjunto de ıtems y X es
      un sımbolo de la gram´atica.
@@ -35,7 +35,7 @@ Se ingresa desde consola, tanto la gramatica como para verificar las cadenas:
 ---
 Output
 --
-Cuando no es LL(1) o LR(1), sale por pantalla indicando que no lo es y no se analizan las cadenas. En cambio, si es
+Cuando no es LL(1) o LR(1), sale por pantalla indicando que no lo es y no se analisan las cadenas. En cambio, si es
 cumple las condiciones, leera la cadenas y nos dira si cumple o no. 
 
 ---
