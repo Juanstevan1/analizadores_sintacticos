@@ -35,7 +35,7 @@ Se ingresa desde consola, tanto la gramatica como para verificar las cadenas:
 ---
 Output
 --
-Cuando no es LL(1) o LR(1), sale por pantalla indicando que no lo es y no se analisan las cadenas. En cambio, si es
+Cuando no es LL(1) o LR(1), sale por pantalla indicando que no lo es y no se analizan las cadenas. En cambio, si es
 cumple las condiciones, leera la cadenas y nos dira si cumple o no. 
 
 ---
