@@ -28,9 +28,9 @@ Input
 --
 Se ingresa desde consola, tanto la gramatica como para verificar las cadenas:
  - Gramatica:
-      Cada produccion de un no terminal se ingresa en una sola linea, por ejemplo (S-> aS|ε) y termina con $. 
+      \n Cada produccion de un no terminal se ingresa en una sola linea, por ejemplo (S-> aS|ε) y termina con $. 
  - Cadenas:
-      Se ingresa en lineas independientes y termina cuando lee una linea vacia.
+      \n Se ingresa en lineas independientes y termina cuando lee una linea vacia.
       
 ---
 Output
