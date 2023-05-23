@@ -1,4 +1,4 @@
-# analizadores_sintacticos
+# Analizadores_sintacticos
 
 Este repositorio contiene implementaciones de dos tipos de analizadores sintácticos ampliamente utilizados en el campo de la compilación y el procesamiento de lenguajes de programación: Bottom-Up y Top-Down.
 
@@ -26,10 +26,10 @@ Se tomaron las siguientes condicones para hacer el analizador Top-Down:
 ---
 Input
 --
-Se ingresa desde consola, tanto la gramatica como para verificar las cadenas.
- -Gramatica:
+Se ingresa desde consola, tanto la gramatica como para verificar las cadenas:
+ - Gramatica:
       Cada produccion de un no terminal se ingresa en una sola linea, por ejemplo (S-> aS|ε) y termina con $. 
- -Cadenas:
+ - Cadenas:
       Se ingresa en lineas independientes y termina cuando lee una linea vacia.
       
 ---
@@ -42,8 +42,8 @@ cumple las condiciones, leera la cadenas y nos dira si cumple o no.
 Requisitos
 --
 El proyecto se realizo en python 3.11, por lo tanto se necesita:
-  -Importor las libreria (numpy y deque)
-  -Ejecutar el programa (Main.py) teniendo encuenta que los 3 archivos esten en el mismo directorio.
+  - Importor las libreria (numpy y deque)
+  - Ejecutar el programa (Main.py) teniendo encuenta que los 3 archivos esten en el mismo directorio.
   
 ---
 Contacto
