@@ -218,7 +218,7 @@ class Grammar:
                 first += list(set(self.firsts[char]) - {'ε'})
 
             else:
-                return [char]
+                return first+ [char]
             if 'ε' in self.firsts[char]:
                 return self.FirstOfString(string1, first, True)
             else:
